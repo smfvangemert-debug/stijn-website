@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>JavaScript</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="html.html">HTML</a></li>
+<li><a href="css.html">CSS</a></li>
+<li><a href="javascript.html">JavaScript</a></li>
+<li><a href="over-mij.html">Over mij</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section>
+
+<h2>Wat is JavaScript?</h2>
+
+<p>
+JavaScript is een programmeertaal die wordt gebruikt om webpagina’s interactief
+en dynamisch te maken. Samen met HTML en CSS vormt JavaScript de basis van
+moderne webontwikkeling. HTML beschrijft de structuur van een webpagina,
+CSS bepaalt de opmaak, en JavaScript zorgt voor gedrag en interactie. <sup>[1]</sup>
+</p>
+
+<p>
+Met JavaScript kunnen ontwikkelaars functionaliteiten toevoegen zoals
+knoppen die reageren op een klik, interactieve formulieren, animaties,
+real-time updates en dynamische content die verandert zonder dat de
+pagina opnieuw hoeft te laden. <sup>[2]</sup>
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Hoe JavaScript werkt</h2>
+
+<p>
+JavaScript wordt uitgevoerd door de browser. Wanneer een webpagina wordt
+geladen, leest de browser de HTML en CSS om de pagina weer te geven.
+Vervolgens kan JavaScript de pagina aanpassen door elementen te veranderen,
+nieuwe elementen toe te voegen of acties uit te voeren wanneer een gebruiker
+interactie heeft met de website. <sup>[1]</sup>
+</p>
+
+<p>
+JavaScript is een zogenaamde <em>event-driven</em> taal. Dit betekent dat
+code wordt uitgevoerd wanneer bepaalde gebeurtenissen plaatsvinden,
+bijvoorbeeld wanneer een gebruiker op een knop klikt of een formulier
+invult. <sup>[3]</sup>
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Variabelen</h2>
+
+<p>
+Variabelen worden gebruikt om gegevens op te slaan. In JavaScript kunnen
+variabelen worden gedeclareerd met <code>let</code>, <code>const</code>
+of <code>var</code>. Moderne JavaScript-code gebruikt meestal
+<code>let</code> en <code>const</code>. <sup>[4]</sup>
+</p>
+
+<pre>
+let naam = "Stijn";
+const leeftijd = 25;
+
+console.log(naam);
+</pre>
+
+<p>
+Variabelen kunnen verschillende soorten data bevatten, zoals tekst,
+getallen, arrays en objecten.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Functies</h2>
+
+<p>
+Een functie is een blok code dat een bepaalde taak uitvoert. Functies maken
+code overzichtelijker en herbruikbaar. <sup>[5]</sup>
+</p>
+
+<pre>
+function begroet(naam) {
+  console.log("Hallo " + naam);
+}
+
+begroet("Stijn");
+</pre>
+
+<p>
+Hier wordt een functie gemaakt die een naam als input krijgt en een
+begroeting op het scherm toont.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>De DOM (Document Object Model)</h2>
+
+<p>
+De DOM is een representatie van de HTML-structuur van een webpagina.
+JavaScript kan via de DOM elementen selecteren en aanpassen. Hierdoor
+kan de inhoud van een pagina dynamisch veranderen. <sup>[6]</sup>
+</p>
+
+<pre>
+document.getElementById("titel").textContent = "Nieuwe titel";
+</pre>
+
+<p>
+In dit voorbeeld zoekt JavaScript een HTML-element met het id
+<code>titel</code> en verandert de tekst.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Events</h2>
+
+<p>
+Events zijn gebeurtenissen die plaatsvinden op een webpagina.
+JavaScript kan luisteren naar deze gebeurtenissen en daarop reageren.
+Voorbeelden van events zijn klikken, toetsen indrukken of het laden
+van een pagina. <sup>[3]</sup>
+</p>
+
+<pre>
+document.querySelector("button").addEventListener("click", function() {
+  alert("Je hebt op de knop geklikt!");
+});
+</pre>
+
+<p>
+Wanneer de gebruiker op de knop klikt, wordt een melding weergegeven.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Wat kun je met JavaScript doen?</h2>
+
+<p>
+JavaScript wordt voor veel verschillende toepassingen gebruikt, zoals:
+</p>
+
+<ul>
+<li>Interactie toevoegen aan webpagina’s</li>
+<li>Formulieren controleren (validatie)</li>
+<li>Dynamische inhoud laden zonder de pagina te verversen</li>
+<li>Animaties en interactieve elementen maken</li>
+<li>Webapplicaties bouwen</li>
+<li>Browsergames ontwikkelen</li>
+</ul>
+
+<p>
+Naast gebruik in browsers kan JavaScript ook op servers worden uitgevoerd,
+bijvoorbeeld met Node.js, waardoor het een veelzijdige programmeertaal
+is geworden. <sup>[2]</sup>
+</p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<h3>Referenties</h3>
+
+
+<p>1. Mozilla Developer Network. What is JavaScript? MDN Web Docs.</p> 
+<p>2. BrainStation. What is JavaScript used for?</p>  
+<p>3. Mozilla Developer Network. Introduction to events.</p>  
+<p>4. Mozilla Developer Network. JavaScript fundamentals: variables.</p> 
+<p>5. Mozilla Developer Network. JavaScript functions.</p>  
+<p>6. Mozilla Developer Network. DOM scripting introduction.</p>
+
+<p>© 2026 Mijn Website</p>
+
+</footer>
+
+</body>
+</html>

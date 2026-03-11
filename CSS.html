@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>CSS Basics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CSS Basics</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="html.html">HTML</a></li>
+<li><a href="css.html">CSS</a></li>
+<li><a href="javascript.html">JavaScript</a></li>
+<li><a href="over-mij.html">Over mij</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section>
+
+<h2>Wat is CSS?</h2>
+
+<p>
+CSS staat voor <strong>Cascading Style Sheets</strong>. Het is een stylesheet-taal die wordt gebruikt om
+het uiterlijk en de presentatie van webpagina’s te bepalen. Met CSS kun je bijvoorbeeld kleuren,
+lettertypes, spacing, positionering en layout aanpassen. HTML bepaalt de structuur van een
+webpagina, terwijl CSS bepaalt hoe deze structuur er visueel uitziet. <sup>[1]</sup>
+</p>
+
+<p>
+Door CSS in een apart bestand te plaatsen kunnen meerdere webpagina’s dezelfde styling delen.
+Hierdoor wordt de code overzichtelijker en eenvoudiger te onderhouden. Ook kunnen browsers het
+CSS-bestand opslaan (cachen), waardoor websites sneller laden. <sup>[1]</sup>
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Hoe CSS werkt</h2>
+
+<p>
+CSS werkt met regels die bestaan uit een <strong>selector</strong> en een
+<strong>declaration block</strong>. De selector bepaalt op welk HTML-element de stijl wordt toegepast.
+De eigenschappen in het declaration block bepalen hoe het element eruitziet. <sup>[2]</sup>
+</p>
+
+<pre>
+h1 {
+  color: blue;
+  font-size: 40px;
+}
+</pre>
+
+<p>In dit voorbeeld:</p>
+
+<ul>
+<li><strong>h1</strong> → selector (selecteert alle h1-koppen)</li>
+<li><strong>color</strong> → property (eigenschap)</li>
+<li><strong>blue</strong> → value (waarde)</li>
+</ul>
+
+</section>
+
+
+<section>
+
+<h2>CSS Selectors</h2>
+
+<p>
+Selectors bepalen op welke HTML-elementen een CSS-regel wordt toegepast.
+Er bestaan verschillende soorten selectors, zoals elementselectors,
+class-selectors en id-selectors. Hiermee kun je heel precies bepalen
+welke onderdelen van een pagina gestyled moeten worden. <sup>[2]</sup>
+</p>
+
+<h3>Element selector</h3>
+
+<pre>
+p {
+  color: red;
+}
+</pre>
+
+<p>Alle paragrafen worden rood.</p>
+
+<h3>Class selector</h3>
+
+HTML:
+
+<pre>
+&lt;p class="highlight"&gt;Belangrijke tekst&lt;/p&gt;
+</pre>
+
+CSS:
+
+<pre>
+.highlight {
+  color: orange;
+}
+</pre>
+
+<p>Alle elementen met de class <strong>highlight</strong> krijgen deze stijl.</p>
+
+</section>
+
+
+<section>
+
+<h2>Het CSS Box Model</h2>
+
+<p>
+Een van de belangrijkste concepten in CSS is het <strong>box model</strong>.
+Elke HTML-element wordt door de browser weergegeven als een rechthoekige
+box. Deze box bestaat uit vier onderdelen: content, padding, border en margin.
+Deze onderdelen bepalen samen de grootte en positie van een element
+op een webpagina. <sup>[3]</sup>
+</p>
+
+<ul>
+<li><strong>Content</strong> – de inhoud van het element (tekst of afbeelding)</li>
+<li><strong>Padding</strong> – ruimte tussen content en border</li>
+<li><strong>Border</strong> – de rand rondom het element</li>
+<li><strong>Margin</strong> – ruimte tussen elementen</li>
+</ul>
+
+<pre>
+div {
+  margin: 20px;
+  padding: 15px;
+  border: 2px solid black;
+}
+</pre>
+
+<p>
+Door het box model te begrijpen kun je bepalen hoe elementen op een
+pagina worden uitgelijnd en hoeveel ruimte ze innemen.
+</p>
+
+</section>
+
+
+<section>
+
+<h2>Wat kun je met CSS doen?</h2>
+
+<p>Met CSS kun je vrijwel het volledige uiterlijk van een website bepalen. Bijvoorbeeld:</p>
+
+<ul>
+<li>Kleuren en achtergronden aanpassen</li>
+<li>Lettertypes en typografie instellen</li>
+<li>Layouts bouwen met Flexbox of CSS Grid</li>
+<li>Responsive websites maken voor verschillende schermgroottes</li>
+<li>Animaties en hover-effecten toevoegen</li>
+</ul>
+
+<p>
+Hierdoor vormt CSS samen met HTML en JavaScript een van de
+belangrijkste technologieën van het moderne web. <sup>[1]</sup>
+</p>
+
+</section>
+<section> 
+    <h3>Referenties</h3>
+
+    <p>1. Mozilla Developer Network. <em>CSS basics</em>. MDN Web Docs.</p>  
+    <p>2. Mozilla Developer Network. <em>CSS selectors</em>. MDN Web Docs. </p> 
+    <p>3. Mozilla Developer Network. <em>The CSS box model</em>. MDN Web Docs.</p>
+    </p>
+</section>
+</main>
+
+
+<footer>
+
+
+
+<p>© 2026 Mijn Website</p>
+
+</footer>
+
+</body>
+</html>
