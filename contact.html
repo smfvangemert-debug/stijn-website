@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Stijn van Gemert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Contact</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="over-mij.html">Over mij</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <p class="eyebrow">Get in touch • Collaboration • Technical Medicine</p>
+                    <h2>Let’s Connect</h2>
+                    <p class="lead">
+                        Do you want to get in touch about medical technology, imaging,
+                        clinical innovation, research, or a technical project? Feel free
+                        to reach out using the form below or via the direct contact details.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-info-card">
+                <h2>Contact Information</h2>
+
+                <address class="contact-details">
+                    <p><strong>Name:</strong> Stijn van Gemert</p>
+                    <p><strong>Location:</strong> Enschede, The Netherlands</p>
+                                        
+                    <p>
+                        <strong>LinkedIn:</strong>
+                        <a href="https://linkedin.com/in/stijn-van-gemert-20a838229" target="_blank" rel="noopener noreferrer">
+                            View LinkedIn profile
+                        </a>
+                    </p>
+                </address>
+
+                <div class="contact-note">
+                    <h3>What you can contact me about</h3>
+                    <ul>
+                        <li>Medical imaging and analysis</li>
+                        <li>Technical medicine and clinical innovation</li>
+                        <li>Research collaboration or project ideas</li>
+                        <li>Academic or technical questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h2>Send a Message</h2>
+
+                <form id="contactForm" action="#" method="post">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" required></textarea>
+
+                    <button type="submit">Send message</button>
+                </form>
+
+                <div id="formFeedback" class="info-box hidden">
+                    <p>Thank you. Your message form has been completed successfully.</p>
+                    <p>
+                        This demo page does not send data to a real server yet, but the structure is
+                        ready for that next step.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Availability</h2>
+            <p>
+                I am interested in clinically relevant technical projects at the intersection of
+                healthcare, engineering, imaging, and data analysis. This website was built as part
+                of my own learning process in web development, but it also serves as a professional
+                overview of my background and interests.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Stijn van Gemert</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

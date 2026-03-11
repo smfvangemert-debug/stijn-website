@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Over mij | Stijn van Gemert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>About Stijn</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="over-mij.html">Over mij</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+       <section class="hero-section">
+            <div class="hero-container">
+
+                <div class="hero-image">
+                    <img src="images/stijn.png" alt="Stijn van Gemert" class="profile-photo">
+                </div>
+
+                <div class="hero-text">
+                    <p class="eyebrow">Technical Medicine • Medical Imaging • Clinical Innovation</p>
+
+                    <h2>Hi, I’m Stijn van Gemert</h2>
+
+                    <p class="lead">
+                        I am an MSc candidate in Medical Imaging & Interventions with hands-on experience
+                        in medical image processing, dosimetric analysis, clinical validation, and
+                        multidisciplinary technical-clinical projects.
+                    </p>
+
+                    <div class="button-group">
+                        <button id="toggleProfileBtn" type="button">Show profile summary</button>
+                        <button id="scrollContactBtn" type="button">Go to contact</button>
+                    </div>
+
+                    <div id="profileSummary" class="info-box hidden">
+                        <p>
+                            My work focuses on translating clinical questions into technically feasible
+                            solutions. I enjoy combining imaging, analysis, 3D workflows, and clinical
+                            applicability into practical projects with real healthcare relevance.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Professional Profile</h2>
+            <p>
+                My academic and practical background sits at the intersection of healthcare,
+                imaging technology, analysis, and engineering. During my studies and internships,
+                I have worked on projects involving CT and MRI-based image analysis, anatomical
+                segmentation, radiotherapy workflow evaluation, and surgical simulation.
+            </p>
+            <p>
+                What motivates me most is solving clinically relevant problems in a structured way:
+                understanding the workflow, identifying where technology can add value, and turning
+                that into a workable solution for practice.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <article class="card">
+                <h3>MSc Medical Imaging & Interventions</h3>
+                <p class="meta">University of Twente • 2023–2026 (expected)</p>
+                <p>
+                    Focus on medical image processing, automated anatomical segmentation,
+                    machine learning applications in medical imaging, and interventional and
+                    imaging technologies.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>BSc Technical Medicine (Clinical Technology)</h3>
+                <p class="meta">University of Twente • 2019–2022</p>
+                <p>
+                    Bachelor training in technical medicine with a thesis at UMCG, including work
+                    on dynamic PET/CT and parametric imaging analysis.
+                </p>
+            </article>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <details class="experience-item">
+                <summary>Internship Radiotherapy — Medisch Spectrum Twente (2025)</summary>
+                <div class="details-content">
+                    <p>
+                        Worked on retrospective dosimetric assessment of IGRT methods in DIBH
+                        whole-breast radiotherapy, comparing kV–kV matching with CBCT-based
+                        positioning.
+                    </p>
+                    <p>
+                        The project focused on quantifying differences in target coverage and OAR
+                        dose across patient datasets and evaluating the clinical implications of
+                        different matching strategies.
+                    </p>
+                </div>
+            </details>
+
+            <details class="experience-item">
+                <summary>Internship ENT / 3D Surgical Workflow — Medisch Spectrum Twente (2025)</summary>
+                <div class="details-content">
+                    <p>
+                        Worked on the development of a 3D workflow for mastoidectomy simulation.
+                        This included CT segmentation, virtual surgery in 3D Slicer, and the design
+                        of a patient-specific ear prosthesis.
+                    </p>
+                    <p>
+                        A key element of this project was translating imaging data and clinical
+                        anatomy into a usable workflow for surgical planning and validation by an
+                        ENT surgeon.
+                    </p>
+                </div>
+            </details>
+
+            <details class="experience-item">
+                <summary>Surgical Internship Diabetic Foot — ZGT Almelo (2024–2025)</summary>
+                <div class="details-content">
+                    <p>
+                        Investigated the relationship between LSCI and TcPO₂ under different
+                        temperature conditions in repeated measurements.
+                    </p>
+                    <p>
+                        The work focused on perfusion measurement behavior, temperature dependency,
+                        and clinical application in patients with peripheral arterial disease.
+                    </p>
+                </div>
+            </details>
+
+            <details class="experience-item">
+                <summary>Bachelor Thesis Nuclear Medicine — UMCG (2022)</summary>
+                <div class="details-content">
+                    <p>
+                        Evaluated dynamic PET/CT scanning and direct parametric imaging, with
+                        attention to differentiation between oncological, inflammatory, and
+                        infectious processes.
+                    </p>
+                    <p>
+                        This project involved clinical data analysis and parameter extraction from
+                        advanced nuclear medicine imaging workflows.
+                    </p>
+                </div>
+            </details>
+        </section>
+
+        <section>
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-pill">Medical image segmentation pipelines</div>
+                <div class="skill-pill">Clinical validation & protocol design</div>
+                <div class="skill-pill">Dosimetric analysis</div>
+                <div class="skill-pill">3D modeling & virtual surgical simulation</div>
+                <div class="skill-pill">Clinical-to-engineering translation</div>
+                <div class="skill-pill">Workflow feasibility evaluation</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+
+            <div class="two-column">
+                <article class="card">
+                    <h3>Programming & Scientific Computing</h3>
+                    <ul>
+                        <li>Python (NumPy, SciPy, Pandas, scikit-learn, basic PyTorch)</li>
+                        <li>MATLAB</li>
+                        <li>3D Slicer workflows</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Data & Modeling</h3>
+                    <ul>
+                        <li>Statistical analysis</li>
+                        <li>Model validation</li>
+                        <li>Performance evaluation</li>
+                        <li>Signal processing fundamentals</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Machine Learning</h3>
+                    <ul>
+                        <li>Convolutional Neural Networks</li>
+                        <li>Neural Networks</li>
+                        <li>Reinforcement Learning (foundational)</li>
+                    </ul>
+                </article>
+
+                <article class="card">
+                    <h3>Medical Imaging & Analysis</h3>
+                    <ul>
+                        <li>MRI and CT image analysis</li>
+                        <li>Anatomical segmentation</li>
+                        <li>Dose distribution analysis</li>
+                        <li>3D modeling and image-based prototyping</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certification</h2>
+            <article class="card">
+                <h3>Radiation Protection Expert</h3>
+                <p class="meta">SBD-CD level</p>
+            </article>
+        </section>
+
+        <section id="contact-section">
+            <h2>Get in Touch</h2>
+            <p>
+                Interested in medical technology, imaging workflows, technical medicine, or
+                clinical innovation? Feel free to get in touch.
+            </p>
+
+            <div class="contact-box">
+                <p><strong>Name:</strong> Stijn van Gemert</p>
+                <p><strong>Location:</strong> Enschede, The Netherlands</p>
+                <p><strong>LinkedIn:</strong> linkedin.com/in/stijn-van-gemert-20a838229</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Stijn van Gemert</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
